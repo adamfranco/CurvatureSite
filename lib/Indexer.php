@@ -37,27 +37,25 @@ class Indexer {
       }
     }
 
-    // Add our directory listings first.
-    foreach ($subdirs as $subdir) {
-      // Add the subdir entry.
-    }
-
     // Sort our files into groups and categorize their types
     $groups = array();
     $types = array();
     $other_files = array();
     foreach ($files as $item) {
+      $file = array();
+      $file['filename'] = $item;
+      $file['date'] = new DateTime('now', $this->tz);
+      $file['date']->setTimestamp(filemtime($path.'/'.$item));
+      $file['size'] = filesize($path.'/'.$item);
+
       if (preg_match('/^([^\.]+)\.(.+)\.(kml|kmz)$/', $item, $m)) {
         if (!isset($groups[$m[1]])) {
           $groups[$m[1]] = array();
         }
-        $groups[$m[1]][$m[2]]['filename'] = $item;
-        $groups[$m[1]][$m[2]]['date'] = new DateTime('now', $this->tz);
-        $groups[$m[1]][$m[2]]['date']->setTimestamp(filemtime($path.'/'.$item));
-        $groups[$m[1]][$m[2]]['size'] = filesize($path.'/'.$item);
+        $groups[$m[1]][$m[2]] = $file;
         $types[] = $m[2];
       } else {
-        $other_files[] = $item;
+        $other_files[] = $file;
       }
     }
 
@@ -72,7 +70,7 @@ class Indexer {
     }
     // Add any remaining types we don't have labels for.
     if (count($types)) {
-        sort($types);
+      sort($types);
       foreach ($types as $type) {
         $labeled_types[$type] = ucwords($type);
       }
@@ -87,6 +85,7 @@ class Indexer {
         foreach ($labeled_types as $type => $label) {
           if (isset($group[$type])) {
             $new_group[$type] = $group[$type];
+            $new_group[$type]['label'] = $label;
           } else {
             $new_group[$type] = null;
           }
@@ -121,9 +120,19 @@ class Indexer {
 
     $sub_ancestors = array_merge($ancestors, array(basename($path)));
     // Add indices for each group.
-    // foreach ($groups as $group => $categories) {
-    //   $this->add_group_index($path, $sub_ancestors, $group, $categories);
-    // }
+    foreach ($groups as $group => $group_files) {
+      file_put_contents($path."/$group.html", $this->twig->render("index.html", array(
+        'item_name' => basename($group),
+        'subdirs' => array(),
+        'group_mode' => 'single',
+        'group' => $group,
+        'group_files' => $group_files,
+        'headings' => $headings,
+        'other_files' => array(),
+        'breadcrumbs' => array_merge($breadcrumbs,array('index.html' => basename($path))),
+        'root_path' => $root_path,
+      )));
+    }
 
     // Recursively add indices for subdirectories.
     foreach ($subdirs as $subdir) {

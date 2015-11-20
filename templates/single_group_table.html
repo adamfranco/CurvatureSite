@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Description</th>
+      <th>Size</th>
+      <th>Date Updated</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for type,file in group_files %}
+{% if file %}
+    <tr>
+      <th><a href="{{file.filename}}">{{type}}</a></th>
+      <th>{{file.label|nl2br}}</th>
+      <td>{{file.size|format_bytes}}</td>
+      <td>{{file.date|date("Y-m-d H:i e")}}</td>
+    </tr>
+{% endif %}
+{% endfor %}
+  </tbody>
+</table>

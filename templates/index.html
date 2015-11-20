@@ -29,6 +29,9 @@
         </tbody>
       </table>
 {% endif %}
+{% if group_mode == 'single' %}
+  {% include "single_group_table.html" %}
+{% else %}
       <table>
         <thead>
 {% include "group_table_head.html" %}
@@ -39,6 +42,7 @@
 {% endfor %}
         </tbody>
       </table>
+{% endif %}
     </main>
     {% include "data-improvement-aside.html" %}
     {% include "footer.html" %}
