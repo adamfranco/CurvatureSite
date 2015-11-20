@@ -4,6 +4,9 @@
 date_default_timezone_set('America/New York');
 $tz = new DateTimeZone('America/New_York');
 
+if (!file_exists(dirname(__FILE__)."/vendor/autoload.php")) {
+  die("You must install dependencies by running `composer install`.");
+}
 require_once dirname(__FILE__)."/vendor/autoload.php";
 
 $loader = new Twig_Loader_Filesystem(dirname(__FILE__).'/templates');
