@@ -32,3 +32,9 @@ $twig->addExtension(new Twig_Extensions_Extension_Number);
 
 $indexer = new Indexer($twig, $tz);
 $indexer->create_indices($target_directory);
+
+// Add resources
+if (!is_dir($target_directory.'/resources')) {
+  mkdir($target_directory.'/resources');
+}
+shell_exec('rsync -av --delete '.escapeshellarg(dirname(__FILE__).'/resources').' '.escapeshellarg($target_directory));

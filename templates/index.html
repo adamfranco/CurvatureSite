@@ -1,12 +1,14 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>{{item_name}}</title>
     <meta charset="UTF-8">
+    <title>Curvature - {{item_name}}</title>
+    <link type="text/css" rel="stylesheet" href="{{root_path}}resources/main.css"/>
   </head>
   <body>
     {% include "header.html" %}
     {% include "about-aside.html" %}
-    <main>
+    <main id="main">
       <h1>
 {% for path,name in breadcrumbs %}
 <a href="{{path}}">{{name}}</a> /

@@ -29,7 +29,9 @@ class Indexer {
         continue;
       }
       if (is_dir($item_path)) {
-        $subdirs[] = $item;
+        if ($item != 'resources') {
+          $subdirs[] = $item;
+        }
       } else {
         $files[] = $item;
       }
@@ -101,6 +103,12 @@ class Indexer {
       $up_path = implode('/', array_fill(0, $depth - $i, '..')) . '/index.html';
       $breadcrumbs[$up_path] = $name;
     }
+    if ($depth > 0) {
+      $root_path = implode('/', array_fill(0, $depth, '..')).'/';
+    } else {
+      $root_path = '';
+    }
+
     file_put_contents($path."/index.html", $this->twig->render("index.html", array(
       'item_name' => basename($path),
       'subdirs' => $subdirs,
@@ -108,6 +116,7 @@ class Indexer {
       'headings' => $headings,
       'other_files' => $other_files,
       'breadcrumbs' => $breadcrumbs,
+      'root_path' => $root_path,
     )));
 
     $sub_ancestors = array_merge($ancestors, array(basename($path)));

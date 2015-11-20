@@ -1,0 +1,39 @@
+#main {
+  width: 75%;
+  min-width:700px;
+  float: left;
+  overflow: auto;
+}
+#data-improvement {
+  width: 200px;
+  float: right;
+  clear: right;
+}
+
+#main {
+  padding-bottom: 4em;
+}
+
+body {
+  min-width: 900px;
+}
+
+#footer {
+  clear: both;
+}
+#footer p {
+  float: left;
+  width: 33%;
+}
+
+thead th {
+  white-space: nowrap;
+}
+
+td {
+  text-align: center;
+}
+tbody th {
+  font-weight: normal;
+  text-align: left;
+}
