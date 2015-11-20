@@ -1,0 +1,11 @@
+      <tr>
+        <td><a href="{{group}}.html">{{group}}</a></td>
+{% for type,groupfile in groupfiles %}
+{% if groupfile %}
+        <td><a href="{{groupfile.filename}}" title="Updated: {{groupfile.date|date("Y-m-d H:i e")}}. Size: {{groupfile.size|format_bytes}}">{{type}}</a></td>
+{% else %}
+        <td>&nbsp;</td>
+{% endif %}
+{% endfor %}
+        <td>{{groupfiles|first.date|date("Y-m-d H:i e")}}</td>
+      </tr>

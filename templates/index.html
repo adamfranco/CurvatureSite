@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>{{item_name}}</title>
+  </head>
+  <body>
+    <h1>{{item_name}}</h1>
+
+    <table>
+{% for dir in subdirs %}
+{% include "dir.html" %}
+{% endfor %}
+    </table>
+    <table>
+      <thead>
+{% include "heading.html" %}
+      </thead>
+      <tbody>
+{% for group,groupfiles in groups %}
+{% include "group.html" %}
+{% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

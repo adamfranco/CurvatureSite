@@ -1,0 +1,12 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/thePanz/Twig-Extension-Number"
+        }
+    ],
+    "require": {
+        "twig/twig": "~1.0",
+        "pnz/twig-extension-number": "1.x"
+    }
+}

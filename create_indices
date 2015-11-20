@@ -1,0 +1,91 @@
+#!/usr/bin/env php
+<?php
+
+date_default_timezone_set('America/New York');
+$tz = new DateTimeZone('America/New_York');
+
+require_once dirname(__FILE__)."/vendor/autoload.php";
+
+$loader = new Twig_Loader_Filesystem(dirname(__FILE__).'/templates');
+$twig = new Twig_Environment($loader, array(
+    // 'cache' => dirname(__FILE__).'/compilation_cache',
+));
+$twig->addExtension(new Twig_Extensions_Extension_Number);
+
+$path = '../Curvature/kml';
+
+create_indices($twig, $tz, $path);
+
+function create_indices(Twig_Environment $twig, $tz, $path, array $ancestors = array()) {
+  $subdirs = array();
+  $files = array();
+  foreach (scandir($path) as $item) {
+    $item_path = $path.'/'.$item;
+    // Ignore parent directories and hidden files.
+    if (preg_match('/^\./', $item) || (is_file($item_path) && !preg_match('/.+\.(kml|kmz)$/', $item))) {
+      continue;
+    }
+    if (is_dir($item_path)) {
+      $subdirs[] = $item;
+    } else {
+      $files[] = $item;
+    }
+  }
+
+  // Add our directory listings first.
+  foreach ($subdirs as $subdir) {
+    // Add the subdir entry.
+  }
+
+  // Sort our files into groups and categorize their types
+  $groups = array();
+  $types = array();
+  $other_files = array();
+  foreach ($files as $item) {
+    if (preg_match('/^([^\.]+)\.(.+)\.(kml|kmz)$/', $item, $m)) {
+      if (!isset($groups[$m[1]])) {
+        $groups[$m[1]] = array();
+      }
+      $groups[$m[1]][$m[2]]['filename'] = $item;
+      $groups[$m[1]][$m[2]]['date'] = new DateTime('now', $tz);
+      $groups[$m[1]][$m[2]]['date']->setTimestamp(filemtime($path.'/'.$item));
+      $groups[$m[1]][$m[2]]['size'] = filesize($path.'/'.$item);
+      $types[] = $m[2];
+    } else {
+      $other_files[] = $item;
+    }
+  }
+  $types = array_unique($types);
+  sort($types);
+  foreach ($groups as $id => &$group) {
+    foreach ($types as $type) {
+      if (!isset($group[$type])) {
+        $group[$type] = null;
+      }
+    }
+    ksort($group);
+  }
+
+  // Add our headings.
+  $headings = array_merge(array('Region'), $types, array("Date Updated"));
+
+  file_put_contents($path."/index.html", $twig->render("index.html", array(
+    'item_name' => basename($path),
+    'subdirs' => $subdirs,
+    'ancestors' => $ancestors,
+    'groups' => $groups,
+    'headings' => $headings,
+    'other_files' => $other_files,
+  )));
+
+  $sub_ancestors = array_merge($ancestors, array(basename($path)));
+  // Add indices for each group.
+  // foreach ($groups as $group => $categories) {
+  //   add_group_index($twig, $path, $sub_ancestors, $group, $categories);
+  // }
+
+  // Recursively add indices for subdirectories.
+  foreach ($subdirs as $subdir) {
+    create_indices($twig, $tz, $path.'/'.$subdir, $sub_ancestors);
+  }
+}
