@@ -10,6 +10,13 @@ class Indexer {
   function __construct(Twig_Environment $twig, DateTimeZone $tz) {
     $this->twig = $twig;
     $this->tz = $tz;
+    $this->type_labels = array(
+      'c_1000' => "Curvature ≥ 1000\nVery twisty",
+      'c_300' => "Curvature ≥ 300\nModerately twisty",
+      'c_1000.multicolor' => "Detected curves\ncolorized\n(Curvature ≥ 1000)",
+      'c_300.multicolor' => "Detected curves\ncolorized\n(Curvature ≥ 300)",
+      // 'surfaces' => 'Surfaces colorized',
+    );
   }
 
   function create_indices($path, array $ancestors = array()) {
@@ -51,20 +58,43 @@ class Indexer {
         $other_files[] = $item;
       }
     }
+
+    // Sort and label our types.
     $types = array_unique($types);
-    sort($types);
-    foreach ($groups as $id => &$group) {
-      foreach ($types as $type) {
-        if (!isset($group[$type])) {
-          $group[$type] = null;
-        }
+    $labeled_types = array();
+    foreach ($this->type_labels as $type => $label) {
+      if (in_array($type, $types)) {
+        $labeled_types[$type] = $label;
+        unset($types[array_search($type, $types)]);
       }
-      ksort($group);
+    }
+    // Add any remaining types we don't have labels for.
+    if (count($types)) {
+        sort($types);
+      foreach ($types as $type) {
+        $labeled_types[$type] = ucwords($type);
+      }
+    }
+
+    // Print out our groups of files.
+    if (count($groups)) {
+      // Add placeholder for groups that don't have a particular file
+      // and sort the group according to our label-array.
+      foreach ($groups as $id => $group) {
+        $new_group = array();
+        foreach ($labeled_types as $type => $label) {
+          if (isset($group[$type])) {
+            $new_group[$type] = $group[$type];
+          } else {
+            $new_group[$type] = null;
+          }
+        }
+        $groups[$id] = $new_group;
+      }
     }
 
     // Add our headings.
-    $headings = array_merge(array('Region'), $types, array("Date Updated"));
-
+    $headings = array_merge(array('region' => 'Region'), $labeled_types, array('date' => 'Date Updated'));
     file_put_contents($path."/index.html", $this->twig->render("index.html", array(
       'item_name' => basename($path),
       'subdirs' => $subdirs,
