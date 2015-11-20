@@ -1,38 +1,44 @@
 <html>
   <head>
     <title>{{item_name}}</title>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
   </head>
   <body>
-    <h1>
+    {% include "header.html" %}
+    {% include "about-aside.html" %}
+    <main>
+      <h1>
 {% for path,name in breadcrumbs %}
-<a href="{{path}}">{{name}}</a> / 
+<a href="{{path}}">{{name}}</a> /
 {%endfor %}
 {{item_name}}</h1>
 
 {% if subdirs %}
-    <table>
-      <thead>
-        <tr>
-          <th>Sub-divided Regions</th>
-        </tr>
-      </thead>
-      <tbody>
+      <table>
+        <thead>
+          <tr>
+            <th>Sub-divided Regions</th>
+          </tr>
+        </thead>
+        <tbody>
 {% for dir in subdirs %}
 {% include "dir.html" %}
 {% endfor %}
-      </tbody>
-    </table>
+        </tbody>
+      </table>
 {% endif %}
-    <table>
-      <thead>
-{% include "heading.html" %}
-      </thead>
-      <tbody>
+      <table>
+        <thead>
+{% include "group_table_head.html" %}
+        </thead>
+        <tbody>
 {% for group,groupfiles in groups %}
 {% include "group.html" %}
 {% endfor %}
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </main>
+    {% include "data-improvement-aside.html" %}
+    {% include "footer.html" %}
   </body>
 </html>
