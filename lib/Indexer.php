@@ -95,13 +95,19 @@ class Indexer {
 
     // Add our headings.
     $headings = array_merge(array('region' => 'Region'), $labeled_types, array('date' => 'Date Updated'));
+    $breadcrumbs = array();
+    $depth = count($ancestors);
+    foreach ($ancestors as $i => $name) {
+      $up_path = implode('/', array_fill(0, $depth - $i, '..')) . '/index.html';
+      $breadcrumbs[$up_path] = $name;
+    }
     file_put_contents($path."/index.html", $this->twig->render("index.html", array(
       'item_name' => basename($path),
       'subdirs' => $subdirs,
-      'ancestors' => $ancestors,
       'groups' => $groups,
       'headings' => $headings,
       'other_files' => $other_files,
+      'breadcrumbs' => $breadcrumbs,
     )));
 
     $sub_ancestors = array_merge($ancestors, array(basename($path)));

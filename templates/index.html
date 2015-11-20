@@ -1,15 +1,29 @@
 <html>
   <head>
     <title>{{item_name}}</title>
+     <meta charset="UTF-8">
   </head>
   <body>
-    <h1>{{item_name}}</h1>
+    <h1>
+{% for path,name in breadcrumbs %}
+<a href="{{path}}">{{name}}</a> / 
+{%endfor %}
+{{item_name}}</h1>
 
+{% if subdirs %}
     <table>
+      <thead>
+        <tr>
+          <th>Sub-divided Regions</th>
+        </tr>
+      </thead>
+      <tbody>
 {% for dir in subdirs %}
 {% include "dir.html" %}
 {% endfor %}
+      </tbody>
     </table>
+{% endif %}
     <table>
       <thead>
 {% include "heading.html" %}
