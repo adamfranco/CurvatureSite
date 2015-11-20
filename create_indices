@@ -1,11 +1,25 @@
 #!/usr/bin/env php
 <?php
 
+$target_directory = '../Curvature/kml';
 date_default_timezone_set('America/New York');
 $tz = new DateTimeZone('America/New_York');
 
 if (!file_exists(dirname(__FILE__)."/vendor/autoload.php")) {
-  die("You must install dependencies by running `composer install`.");
+  $message = "
+Error: You must install dependencies by running `composer install` in this directory
+before this program can run successfully.
+
+If you do not have composer installed on your machine, you can get it as described
+here: https://getcomposer.org/
+
+1. Download the composer.phar to the current directory with:
+       curl -sS https://getcomposer.org/installer | php
+2. Install dependencies of this package:
+       php composer.phar install
+
+";
+  die($message);
 }
 require_once dirname(__FILE__)."/vendor/autoload.php";
 
@@ -15,9 +29,7 @@ $twig = new Twig_Environment($loader, array(
 ));
 $twig->addExtension(new Twig_Extensions_Extension_Number);
 
-$path = '../Curvature/kml';
-
-create_indices($twig, $tz, $path);
+create_indices($twig, $tz, $target_directory);
 
 function create_indices(Twig_Environment $twig, $tz, $path, array $ancestors = array()) {
   $subdirs = array();
