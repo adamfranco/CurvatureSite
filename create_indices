@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-$target_directory = '../Curvature/kml';
+$target_directory = dirname(__FILE__).'/../CurvatureData/kml';
 date_default_timezone_set('America/New York');
 $tz = new DateTimeZone('America/New_York');
 
