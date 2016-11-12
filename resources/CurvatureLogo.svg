@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="5.2838626in"
-   height="2.1304631in"
-   viewBox="0 0 475.54765 191.74168"
+   width="5.4282517in"
+   height="2.4991319in"
+   viewBox="0 0 488.54267 224.92187"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -103,8 +103,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.2009375"
-     inkscape:cx="241.39628"
-     inkscape:cy="77.640567"
+     inkscape:cx="244.31067"
+     inkscape:cy="44.206116"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -118,7 +118,8 @@
      fit-margin-top="0.25"
      fit-margin-left="0.25"
      fit-margin-right="0.25"
-     fit-margin-bottom="0.25" />
+     fit-margin-bottom="0.25"
+     showguides="false" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -136,7 +137,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
-     transform="translate(32.386966,-377.74124)">
+     transform="translate(32.386966,-377.74123)">
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19854558px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 211.60535,417.45305 -29.2268,-16.59589 c -378.01952,39.36175 -142.525472,192.245 236.4785,131.38541 L 381.97463,511.73208 C 140.61386,537.54871 -77.205459,452.00505 211.60535,417.45305 Z"
@@ -148,7 +149,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Solid Lines"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(4.0598469e-7,8.566034e-6)">
     <path
        transform="translate(32.386966,-377.74124)"
        sodipodi:nodetypes="cc"
@@ -168,7 +170,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Dashed Lines"
-     style="display:none">
+     style="display:none"
+     transform="translate(4.0598469e-7,8.566034e-6)">
     <path
        transform="translate(32.386966,-377.74124)"
        sodipodi:nodetypes="cc"
@@ -180,10 +183,11 @@
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="Main text">
+     inkscape:label="Main text"
+     transform="translate(4.0598469e-7,8.566034e-6)">
     <text
        xml:space="preserve"
-       style="display:inline;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580.00001907%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580.00001907%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="171.82629"
        y="492.2868"
        id="text4564"
@@ -194,5 +198,40 @@
          x="171.82629"
          y="492.2868"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580.00001907%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start">urvature</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Subtext"
+     transform="translate(4.0598469e-7,8.566034e-6)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="21.478531"
+       y="197.74168"
+       id="text5288"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5301"
+         x="21.478531"
+         y="197.74168">Find twisty roads.</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="URL"
+     style="display:inline"
+     transform="translate(1.3735446e-6,-8.8611281e-6)">
+    <text
+       sodipodi:linespacing="125%"
+       id="text5292"
+       y="197.7417"
+       x="255.2485"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan5296"
+         x="255.2485"
+         y="197.7417">roadcurvature.com</tspan></text>
   </g>
 </svg>
