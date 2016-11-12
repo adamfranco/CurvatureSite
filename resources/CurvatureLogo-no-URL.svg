@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="5.2838616in"
-   height="2.4995966in"
-   viewBox="0 0 475.54756 224.96369"
+   width="434.54752"
+   height="183.96368"
+   viewBox="0 0 434.54752 183.96367"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="CurvatureLogo-no-URL.svg">
+   sodipodi:docname="CurvatureLogo-no-URL.svg"
+   inkscape:export-filename="/Users/afranco/Documents/Geography/CurvatureSite/resources/CurvatureLogo-no-URL.png"
+   inkscape:export-xdpi="150.03027"
+   inkscape:export-ydpi="150.03027">
   <defs
      id="defs4">
     <marker
@@ -103,8 +106,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.2009375"
-     inkscape:cx="274.76052"
-     inkscape:cy="59.893504"
+     inkscape:cx="250.09711"
+     inkscape:cy="39.393493"
      inkscape:document-units="px"
      inkscape:current-layer="layer5"
      showgrid="false"
@@ -114,12 +117,13 @@
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
-     units="in"
-     fit-margin-top="0.25"
-     fit-margin-left="0.25"
-     fit-margin-right="0.25"
-     fit-margin-bottom="0.25"
-     showguides="false" />
+     units="px"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     showguides="false"
+     inkscape:showpageshadow="false" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -137,7 +141,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
-     transform="translate(32.386816,-377.74336)">
+     transform="translate(11.886816,-398.24336)">
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.19854558px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 211.60535,417.45305 -29.2268,-16.59589 c -378.01952,34.36565 -142.525472,192.245 236.4785,131.38541 L 381.97463,511.73208 C 140.61386,537.54871 -77.205459,452.00505 211.60535,417.45305 Z"
@@ -150,7 +154,7 @@
      id="layer3"
      inkscape:label="Solid Lines"
      style="display:inline"
-     transform="translate(-1.4990715e-4,-0.00212707)">
+     transform="translate(-20.50015,-20.502132)">
     <path
        transform="translate(32.386966,-377.74124)"
        sodipodi:nodetypes="cc"
@@ -171,7 +175,7 @@
      id="layer2"
      inkscape:label="Dashed Lines"
      style="display:none"
-     transform="translate(-1.4990715e-4,-0.00212707)">
+     transform="translate(-20.50015,-20.502132)">
     <path
        transform="translate(32.386966,-377.74124)"
        sodipodi:nodetypes="cc"
@@ -184,7 +188,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Main text"
-     transform="translate(-1.4990715e-4,-0.00212707)">
+     transform="translate(-20.50015,-20.502132)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580.00001907%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -203,7 +207,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Subtext"
-     transform="translate(-1.4990715e-4,-0.00212707)">
+     transform="translate(-20.50015,-20.502132)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -221,7 +225,7 @@
      id="layer6"
      inkscape:label="URL"
      style="display:none"
-     transform="translate(-1.4893959e-4,-0.00214449)">
+     transform="translate(-20.500149,-20.502149)">
     <text
        sodipodi:linespacing="125%"
        id="text5292"
