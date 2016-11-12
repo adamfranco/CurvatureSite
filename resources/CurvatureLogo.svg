@@ -102,9 +102,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.60046875"
+     inkscape:zoom="0.84919105"
      inkscape:cx="504.15736"
-     inkscape:cy="-27.532275"
+     inkscape:cy="172.3116"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -127,7 +127,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -152,15 +152,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:98.80479431px;line-height:580.00001907%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="267.63068"
-       y="590.59692"
+       x="402.5253"
+       y="502.33255"
        id="text4564"
-       sodipodi:linespacing="580.00002%"
-       transform="scale(1.212169,0.82496747)"><tspan
+       sodipodi:linespacing="580.00002%"><tspan
          sodipodi:role="line"
          id="tspan4566"
-         x="267.63068"
-         y="590.59692"
+         x="402.5253"
+         y="502.33255"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:98.80479431px;line-height:580.00001907%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start">urvature</tspan></text>
   </g>
 </svg>
