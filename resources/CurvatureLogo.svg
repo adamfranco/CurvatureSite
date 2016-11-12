@@ -102,9 +102,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2009375"
-     inkscape:cx="244.80454"
-     inkscape:cy="93.284009"
+     inkscape:zoom="1.6983821"
+     inkscape:cx="205.20553"
+     inkscape:cy="62.242243"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -143,12 +143,6 @@
        id="path4560"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
-    <path
-       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#ffff00;stroke-width:1.91799998;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:7.67199993,7.67199993;stroke-dashoffset:13.23419988;stroke-opacity:1"
-       d="m 192.5962,407.24953 c -56.22037,8.323 -95.936711,17.74966 -122.043058,27.59516 -144.467457,54.48305 127.844138,121.79208 326.507968,85.87567 l 0,0"
-       id="path4562"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cscc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
@@ -162,5 +156,11 @@
          x="171.82629"
          y="492.2868"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;writing-mode:lr;text-anchor:start;">urvature</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5204"
+       d="m 194.69271,407.75211 c -344.89045,41.27105 -64.40953,157.61302 202.37707,112.15036"
+       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#ffff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8,8;stroke-dashoffset:11.8;stroke-opacity:1" />
   </g>
 </svg>
