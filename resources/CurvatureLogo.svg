@@ -102,11 +102,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.6983821"
-     inkscape:cx="205.20553"
-     inkscape:cy="62.242243"
+     inkscape:zoom="1.2009375"
+     inkscape:cx="241.39628"
+     inkscape:cy="77.640567"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:snap-text-baseline="true"
      inkscape:window-width="1280"
@@ -132,7 +132,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
+     inkscape:label="Road"
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
@@ -143,24 +143,56 @@
        id="path4560"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="171.82629"
-       y="492.2868"
-       id="text4564"
-       sodipodi:linespacing="580%"
-       transform="scale(0.98885373,1.0112719)"><tspan
-         sodipodi:role="line"
-         id="tspan4566"
-         x="171.82629"
-         y="492.2868"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;writing-mode:lr;text-anchor:start;">urvature</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Solid Lines"
+     style="display:inline">
     <path
+       transform="translate(32.386966,-377.74124)"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path5208"
+       d="M 195.09553,408.37355 C -147.9571,448.29456 132.02125,562.2265 394.65669,519.0476"
+       style="display:inline;fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#ffff00;stroke-width:1.20000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.07999992;stroke-opacity:1" />
+    <path
+       transform="translate(32.386966,-377.74124)"
+       style="display:inline;fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#ffff00;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7.07999992;stroke-opacity:1"
+       d="m 192.29875,406.60717 c -343.64143,41.68739 -63.36868,161.36009 206.33231,114.64841"
+       id="path5206"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Dashed Lines"
+     style="display:none">
+    <path
+       transform="translate(32.386966,-377.74124)"
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path5204"
        d="m 194.69271,407.75211 c -344.89045,41.27105 -64.40953,157.61302 202.37707,112.15036"
-       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#ffff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8,8;stroke-dashoffset:11.8;stroke-opacity:1" />
+       style="display:inline;fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#ffff00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:11.80000019;stroke-opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Main text">
+    <text
+       xml:space="preserve"
+       style="display:inline;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580.00001907%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="171.82629"
+       y="492.2868"
+       id="text4564"
+       sodipodi:linespacing="580.00002%"
+       transform="matrix(0.98885373,0,0,1.0112719,32.386966,-377.74124)"><tspan
+         sodipodi:role="line"
+         id="tspan4566"
+         x="171.82629"
+         y="492.2868"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580.00001907%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start">urvature</tspan></text>
   </g>
 </svg>
