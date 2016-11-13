@@ -13,8 +13,10 @@ class Indexer {
     $this->type_labels = array(
       'c_1000' => "Curvature ≥ 1000\nVery twisty",
       'c_300' => "Curvature ≥ 300\nModerately twisty",
-      'c_1000.multicolor' => "Detected curves\ncolorized\n(Curvature ≥ 1000)",
-      'c_300.multicolor' => "Detected curves\ncolorized\n(Curvature ≥ 300)",
+      'c_1000.curves' => "Detected curves\n(Curvature ≥ 1000)",
+      'c_300.curves' => "Detected curves\n(Curvature ≥ 300)",
+      'c_1000.multicolor' => "Detected curves\n(Curvature ≥ 1000)",
+      'c_300.multicolor' => "Detected curves\n(Curvature ≥ 300)",
       // 'surfaces' => 'Surfaces colorized',
     );
   }
