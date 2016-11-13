@@ -116,7 +116,7 @@ only screen and (max-width: 760px),
 		position: relative;
 		padding-left: 50%;
     text-align: right;
-    height: 2em;
+    height: 2.5em;
 	}
 
 	td:before {
