@@ -2,8 +2,8 @@
 <?php
 
 $target_directory = dirname(__FILE__).'/../CurvatureData/kml';
-date_default_timezone_set('America/New_York');
-$tz = new DateTimeZone('America/New_York');
+date_default_timezone_set('UTC');
+$tz = new DateTimeZone('UTC');
 
 if (!file_exists(dirname(__FILE__)."/vendor/autoload.php")) {
   $message = "
