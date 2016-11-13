@@ -54,6 +54,12 @@ class Indexer {
         }
         $groups[$m[1]][$m[2]] = $file;
         $types[] = $m[2];
+        if (isset($this->type_labels[$m[2]])) {
+          $file['label'] = $this->type_labels[$m[2]];
+        } else {
+          $file['label'] = $m[2];
+        }
+
       } else {
         $other_files[] = $file;
       }

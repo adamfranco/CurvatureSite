@@ -20,18 +20,12 @@
 {{item_name}}</h1>
 
 {% if subdirs %}
-      <table>
-        <thead>
-          <tr>
-            <th>Sub-divided Regions</th>
-          </tr>
-        </thead>
-        <tbody>
+      <h4>Sub-divided Regions</h4>
+      <ul>
 {% for dir in subdirs %}
 {% include "dir.html" %}
 {% endfor %}
-        </tbody>
-      </table>
+      </ul>
 {% endif %}
 {% if group_mode == 'single' %}
   {% include "single_group_table.html" %}
