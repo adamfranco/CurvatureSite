@@ -11,9 +11,7 @@
 }
 #main {
   width: 75%;
-  min-width:700px;
   float: left;
-  overflow: auto;
 }
 #data-improvement {
   width: 200px;
@@ -26,7 +24,6 @@
 }
 
 body {
-  min-width: 900px;
   padding-left: 1em;
   padding-right: 1em;
   padding-top:2em;
@@ -56,6 +53,7 @@ body {
 #footer p {
   float: left;
   width: 29%;
+  min-width: 200px;
   margin-left: 2%;
   margin-right: 2%;
 }
@@ -66,6 +64,13 @@ body {
 }
 #footer a:hover {
   color: #cb5920;
+}
+#footer a.footer-link-long {
+  white-space: normal;
+}
+
+.table_wrapper {
+  overflow-x: auto;
 }
 
 thead th {
@@ -155,16 +160,13 @@ td, th {
 
 /* Drop the left sidebar below when the screen is narrow */
 @media only screen and (max-width: 960px) {
-  body {
-    min-width: 700px;
-  }
 
   #main {
-    width: 100%;
+    width: inherit;;
   }
 
   #data-improvement {
-    width: 100%;
+    width: inherit;
     float: none;
     clear: both;
   }
@@ -179,5 +181,17 @@ td, th {
 @media only screen and (max-width: 800px) {
   #header {
     background-size: 50% 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+  }
+
+  #header {
+    background-image: none;
   }
 }
