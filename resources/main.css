@@ -239,6 +239,16 @@ only screen and (max-width: 760px),
 @media only screen and (max-width: 800px) {
   #header {
     background-size: 50% 100px;
+    height: 100px;
+    padding-bottom: 0px;
+  }
+  #logo {
+    height: 80%;
+    max-width: 90%;
+    width: auto;
+  }
+  #header {
+    background-size: 50% 100px;
   }
 }
 
@@ -249,7 +259,5 @@ only screen and (max-width: 760px),
     margin: 0px;
   }
 
-  #header {
-    background-image: none;
-  }
+
 }
