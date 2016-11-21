@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="5.4282517in"
-   height="2.4991319in"
-   viewBox="0 0 488.54267 224.92187"
+   width="5.3868737in"
+   height="2.4995964in"
+   viewBox="0 0 484.81865 224.96367"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -115,9 +115,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="302.73886"
-     inkscape:cy="94.991023"
+     inkscape:zoom="1"
+     inkscape:cx="196.66548"
+     inkscape:cy="6.0363613"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -141,7 +141,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -150,13 +150,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
-     transform="translate(32.386966,-377.74123)">
-    <path
-       style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#00ff00;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 454.13933,155.53702 207.66084,18.914523 20.506097,17.209255 l -8.131728,56.391766 15.202795,70.180349 83.968926,23.15775 107.12668,14.49569 236.35044,-11.66727 z"
-       id="path4257"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccc" />
+     transform="translate(32.386817,-377.74338)">
     <g
        id="g4310"
        clip-path="url(#clipPath4369)">
@@ -181,7 +175,7 @@
     </g>
   </g>
   <g
-     transform="translate(4.0598469e-7,8.566034e-6)"
+     transform="translate(-1.4856604e-4,-0.00214304)"
      style="display:none"
      inkscape:label="Solid Lines copy"
      id="g4251"
@@ -206,7 +200,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Main text"
-     transform="translate(4.0598469e-7,8.566034e-6)">
+     transform="translate(-1.4856604e-4,-0.00214304)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580.00001907%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -225,7 +219,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Subtext"
-     transform="translate(4.0598469e-7,8.566034e-6)">
+     transform="translate(-1.4856604e-4,-0.00214304)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -243,7 +237,7 @@
      id="layer6"
      inkscape:label="URL"
      style="display:inline"
-     transform="translate(1.3735446e-6,-8.8611281e-6)">
+     transform="translate(-1.4759848e-4,-0.00216304)">
     <text
        sodipodi:linespacing="125%"
        id="text5292"
