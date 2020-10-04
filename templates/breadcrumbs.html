@@ -4,7 +4,11 @@
       <i class="crycon-homebread"></i>
       <span class="screen-reader-text">Home</span>
     </a>
+    {% for path,name in breadcrumbs %}
+      <i class="crycon-angle-right"></i>
+      <a href="{{path}}" class="">{{name}}</a>
+    {%endfor %}
     <i class="crycon-angle-right"></i>
-    <span class="current">Download Data</span>
+    {{item_name}}
   </div>
 </div>

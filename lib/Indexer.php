@@ -108,6 +108,9 @@ class Indexer {
     $depth = count($ancestors);
     foreach ($ancestors as $i => $name) {
       $up_path = implode('/', array_fill(0, $depth - $i, '..')) . '/index.html';
+      if ($name == 'kml') {
+        $name = 'Download Data';
+      }
       $breadcrumbs[$up_path] = $name;
     }
     if ($depth > 0) {
@@ -116,8 +119,12 @@ class Indexer {
       $root_path = '';
     }
 
+    $item_name = basename($path);
+    if ($item_name == 'kml') {
+      $item_name = 'Download Data';
+    }
     file_put_contents($path."/index.html", $this->twig->render("index.html", array(
-      'item_name' => basename($path),
+      'item_name' => $item_name,
       'subdirs' => $subdirs,
       'groups' => $groups,
       'headings' => $headings,
