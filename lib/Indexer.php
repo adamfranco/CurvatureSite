@@ -121,7 +121,7 @@ class Indexer {
 
     $item_name = basename($path);
     if ($item_name == 'kml') {
-      $item_name = 'Download Data';
+      $item_name = 'Download Curvature Data';
     }
     file_put_contents($path."/index.html", $this->twig->render("index.html", array(
       'item_name' => $item_name,
