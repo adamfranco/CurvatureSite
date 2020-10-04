@@ -1,21 +1,3 @@
-<aside id="data-improvement">
   <h2>Improving the Data</h2>
 
-  <p>Because Curvature uses the <a href="http://openstreetmap.org">OpenStreetMap</a> -- a world-map that anyone can edit -- as its data-source, you too can improve the map and thereby improve the Curvature files the next time they are generated. For more information about the fabulous OpenStreetMap project, see their <a href="https://www.openstreetmap.org/help">help page</a>.</p>
-
-  <p>While there are many, many ways to improve the OpenStreetMap, there are several particular types of edits that are a big help in improving the Curvature output files: adding <a href="https://wiki.openstreetmap.org/wiki/Key:surface"><code>surface</code></a> tags, fixing improper <code>highway</code> type tags, and smoothing jiggly segments.</p>
-
-  <details>
-    <summary>More details...</summary>
-    <h3>Adding <code>surface</code> Tags</h3>
-
-    <p>In some parts of the world almost every road segment (a "way" in OSM parlance) has an appropriate <a href="https://wiki.openstreetmap.org/wiki/Key:surface"><code>surface</code> tag</a> applied to it, allowing Curvature to filter out the unpaved roads -- which are often small and very twisty! At the time of this writing however, many roads do not have a <a href="https://wiki.openstreetmap.org/wiki/Key:surface"><code>surface</code> tag</a> and so Curvature can't filter them out, resulting in the really twisty paved roads getting hidden among hundreds or thousands of unpaved roads. You can help help improve the Curvature output by clicking through to edit the road segments in <a href="http://openstreetmap.org">OpenStreetMap</a> and adding appropriate <a href="https://wiki.openstreetmap.org/wiki/Key:surface"><code>surface</code> tags</a> based on your memory of travelling the road, the satellite imagery shown in the OpenStreetMap editor, or <a href="https://wiki.openstreetmap.org/wiki/Potential_Datasources">other allowed data-sources</a>.</p>
-
-    <h3>Fixing improper <code>highway</code>-type Tags</h3>
-    <p>In the United States, much of the OpenStreetMap road network was imported from the U.S. Census Bureau's <a href="https://www.census.gov/geo/maps-data/data/tiger.html">TIGER</a> data-set. While this data-import provided a rich starting-point for mapping, it mis-categorized most roadways as <code>highway=residential</code> rather than using a proper <a href="https://wiki.openstreetmap.org/wiki/Key:highway"><code>highway</code></a>. Roads that are unimproved forestry tracks or agricultural tracks (not to be confused with improved gravel or dirt roads) can be changed to <a href="https://wiki.openstreetmap.org/wiki/Tag:highway%3Dtrack"><code>highway=track</code></a> and they will be filtered out of the Curvature. Similarly, mis-categorized driveways can be changed to <a href="https://wiki.openstreetmap.org/wiki/Tag:highway%3Dservice"><code>highway=service</code></a> and they will be filtered out.</p>
-
-    <h3>Smoothing Jiggly Segments</h3>
-    <p>Aside from improper surface or type tagging, the last big reason roads will get improperly included in the Curvature output is when they are generally straight roads, but are defined by many close-together points that shift back-and forth across the road width. This can often happen when a road was surveyed using a GPS unit that didn't have a good signal, causing the coordinates recorded to jump around. You can identify ways like this because they look straight but have high curvature-values.</p>
-    <p>A good way to clean up jiggly segments is to carefully remove and shift the points that make up the road so that they smoothly follow the satellite imagery.</p>
-  </details>
-</aside>
+  <p>Because Curvature uses the <a href="http://openstreetmap.org">OpenStreetMap</a> -- a world-map that anyone can edit -- as its data source, you too can improve the map and thereby improve the Curvature files the next time they are generated. For more information about improvements that are of particular help to Curvature, please see the <a href="https://roadcurvature.com/how-it-works/osm/">Curvature OpenStreetMap</a> page.</p>

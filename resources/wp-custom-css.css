@@ -1,0 +1,118 @@
+/* Shrink the menu height. */
+#access a > span {
+	display: block;
+	padding: 10px 18px;
+	text-transform: uppercase;
+}
+#access > .menu > ul li > a:not(:only-child) > span::after {
+  top: 10px;
+}
+@media (max-width: 640px) {
+	#nav-toggle {
+		height: 40px;
+	}
+}
+
+/* Slider tweaks */
+.nivo-caption .inline-slide-text {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.slide-text {
+	font-size: 14px !important;
+}
+
+/* Header tweaks */
+#header {
+	background-color: #ffffff;
+}
+
+#branding {
+	max-width: 1200px;
+}
+
+#bg_image {
+	max-width: 60%;
+	max-height: 100px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#logo img {
+	max-height: 85px;
+
+}
+
+@media (max-width: 900px) {
+	#bg_image {
+		max-width: 60%;
+		min-height: 100px;
+	}
+}
+
+@media (max-width: 800px) {
+	#bg_image {
+		max-width: 50%;
+		min-height: 100px;
+	}
+}
+
+/* Inline code styles */
+.entry-content p code, .entry-content h1 code, .entry-content h2 code, .entry-content h3 code, .entry-content h4 code {
+	display: inline;
+	border: none;
+}
+
+/* Article call-outs */
+.entry-content aside {
+    background-color: #eeeeee;
+    margin: 1em;
+    padding: 1em;
+}
+
+/* Subscribe form */
+#mc_embed_signup {
+	width: 100%;
+	max-width: 30em;
+	background:#fff;
+	clear:left;
+	font:14px Helvetica,Arial,sans-serif;
+}
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    padding: 8px 0;
+    text-indent: 2%;
+    width: 100%;
+}
+#mc_embed_signup .mc-field-group {
+   margin-bottom: 1em;
+}
+#mc_embed_signup .indicates-required {
+   float: right;
+}
+
+/* Subscribe buttons */
+a.subscribe-link {
+    background-color: #cb5920;
+    border-radius: 12px;
+    color: white;
+    display: inline-block;
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+a.subscribe-link:hover {
+	background-color: #1e98c8;
+}
+
+/* Misc style tweaks */
+.wp-block-image  {
+	text-align: center;
+}
+.wp-block-image figcaption {
+	font-size: 0.8em;
+	font-style: italic;
+	margin-bottom: 1.5em;
+}

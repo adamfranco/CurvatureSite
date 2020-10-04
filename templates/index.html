@@ -2,22 +2,75 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>Curvature - {{item_name}}</title>
-    <link rel='stylesheet' id='nirvanas-fonts-css'  href='http://roadcurvature.com/wp-content/themes/nirvana/fonts/fontfaces.css' type='text/css' media='all' />
+
+    <!-- JS from the WP site. -->
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var cryout_ajax_more = {"page_number_next":"2","page_number_max":"1","page_link_model":"https:\/\/roadcurvature.com\/page\/9999999\/","load_more_str":"More Posts","content_css_selector":"#content","pagination_css_selector":".pagination, .navigation"};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://roadcurvature.com/wp-content/themes/nirvana/js/ajax.js?ver=1.5.2'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var nirvana_settings = {"mobile":"1","fitvids":"1","contentwidth":"900"};
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='https://roadcurvature.com/wp-content/themes/nirvana/js/frontend.js?ver=1.5.2'></script>
+
+    <!-- Styles from the WP site. -->
+    <link rel='stylesheet' id='wp-block-library-css'  href='https://roadcurvature.com/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://roadcurvature.com/wp-content/themes/nirvana/style.css?ver=1.5.2" type="text/css">
+    <link rel='stylesheet' id='nirvana-fonts-css'  href='https://roadcurvature.com/wp-content/themes/nirvana/fonts/fontfaces.css?ver=1.5.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='nirvana-style-css'  href='https://roadcurvature.com/wp-content/themes/nirvana/style.css?ver=1.5.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='nirvana-style-inline-css'  href='{{root_path}}resources/nirvana-inline-css.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='nirvana-mobile-css'  href='https://roadcurvature.com/wp-content/themes/nirvana/styles/style-mobile.css?ver=1.5.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='jetpack_css-css'  href='https://roadcurvature.com/wp-content/plugins/jetpack/css/jetpack.css?ver=8.6.1' type='text/css' media='all' />
+    <link rel="stylesheet" id="wp-custom-css" href="{{root_path}}resources/wp-custom-css.css" type="text/css" media='all' >
+
+    <!-- Application specific styles and overrides. -->
     <link type="text/css" rel="stylesheet" href="{{root_path}}resources/main.css"/>
+
+    <!-- Facebook Open Graph protocol -->
+    <meta property="fb:admins" content="adamfranco"/>
+    <meta property="og:title" content="Curvature - Downloads"/>
+    <meta property="og:site_name" content="Curvature"/>
+    <meta property="og:description" content="Find twisty roads."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://roadcurvature.com/files/2016/11/Gauge-Road-Inset-with-logo.jpg"/>
+    <meta property="og:locale" content="en_us"/>
+    <!-- // end Open Graph -->
+
+    <link rel="icon" href="https://roadcurvature.com/files/2016/11/cropped-CurvatureLogo-square-white-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://roadcurvature.com/files/2016/11/cropped-CurvatureLogo-square-white-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://roadcurvature.com/files/2016/11/cropped-CurvatureLogo-square-white-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://roadcurvature.com/files/2016/11/cropped-CurvatureLogo-square-white-270x270.png" />
   </head>
-  <body>
-    <div id="container">
+  <body class="page-template-default page page-parent custom-background nirvana-image-one caption-simple nirvana-menu-left nirvana-topbarhide">
+    <div id="wrapper" class="hfeed">
+      <div id="header-full">
     {% include "header.html" %}
-    {% include "top-menu.html" %}
-    {% include "about-aside.html" %}
-    <main id="main">
-      <h1>
-{% for path,name in breadcrumbs %}
-<a href="{{path}}">{{name}}</a> /
-{%endfor %}
-{{item_name}}</h1>
+      </div>
+      <div style="clear:both;height:0;"> </div>
+      {% include "breadcrumbs.html" %}
+      <main id="main">
+        <div id="toTop">
+          <i class="crycon-back2top"></i>
+        </div>
+        <div  id="forbottom" >
+          <div style="clear:both;"> </div>
+          <section id="container" class="one-column">
+            <div id="content" role="main">
+              <div class="page type-page status-publish hentry">
+                <h1 class="entry-title">
+                  {% for path,name in breadcrumbs %}
+                  <a href="{{path}}">{{name}}</a> /
+                  {%endfor %}
+                  {{item_name}}
+                </h1>
+                <div class="entry-content">
+                  {% include "about-aside.html" %}
 
 {% if subdirs %}
       <h4>Sub-divided Regions</h4>
@@ -41,10 +94,16 @@
         </tbody>
       </table>
 {% endif %}
-    </main>
-    {% include "data-improvement-aside.html" %}
-    {% include "footer.html" %}
+
+                  {% include "data-improvement-aside.html" %}
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        {% include "footer.html" %}
+      </main>
+    </div>
     {% include "analytics.html" ignore missing %}
-  </div>
   </body>
 </html>
