@@ -21,7 +21,6 @@
    inkscape:export-ydpi="130.021">
   <defs
      id="defs4">
-    <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&amp;family=Nunito:wght@700');</style>
     <marker
        style="overflow:visible"
        inkscape:stockid="InfiniteLineEnd"
@@ -204,7 +203,7 @@
      transform="translate(-20.50015,-20.502125)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:58px;line-height:550%;font-family:'Raleway';-inkscape-font-specification:'Raleway, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580.00001907%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="171.82629"
        y="492.2868"
        id="text4564"
@@ -214,7 +213,7 @@
          id="tspan4566"
          x="171.82629"
          y="492.2868"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:58px;line-height:580%;font-family:'Raleway';-inkscape-font-specification:'Raleway, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start">urvature</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:60px;line-height:580.00001907%;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start">urvature</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -223,7 +222,7 @@
      transform="translate(-20.50015,-20.502125)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:125%;font-family:'Nunito';-inkscape-font-specification:'Nunito, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="21.478531"
        y="197.74168"
        id="text5288"
@@ -244,7 +243,7 @@
        id="text5292"
        y="197.7417"
        x="255.2485"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:125%;font-family:'Nunito';-inkscape-font-specification:'Nunito, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          sodipodi:role="line"
          id="tspan5296"
